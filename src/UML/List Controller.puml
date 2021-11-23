@@ -1,0 +1,124 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class App
+{
+    +main()
+    +start()
+}
+
+class GetSetItems
+{
+    - String Description
+    - String DueDate
+    - boolean completed
+
+    + getDescription()
+    + setDescription()
+
+    + getDueDate()
+    + setDueDate()
+
+    + getCompleted()
+    + setCompleted()
+}
+
+class ListAttributes
+{
+
+    -String ListTitle
+    -ArrayList<GetSetItems>ListOfItems
+
+    + ListAttributes
+
+    + searchDate()
+    + searchDescription()
+
+    + getItems()
+    + setItems()
+
+    + getTitle()
+    + setTitle()
+
+    + AddItem()
+    + RemoveItem()
+
+    + DisplayAllItems()
+    + CompleteDisplay()
+    + IncompleteDisplay()
+
+    + SaveList()
+    + LoadList()
+
+    + FileFormatting()
+    + CheckingDate()
+
+}
+
+class ListMenuController
+{
+    - ArrayList<GetSetItems> lists
+    - ListView ViewTheLists;
+    - TextArea ItemsTA;
+
+    - TextField EditDescriptionDueDate;
+    - TextField EditCurrentDescription;
+    - TextField EditNewDescription;
+
+    - TextField EditNewDueDate;
+    - TextField EditDueDateDescription;
+    - TextField EditCurrentDueDate;
+
+    - TextField EditCompletedDescription;
+    - TextField EditCompletedDueDate;
+    - TextField EditNewCompleted;
+
+    - TextField AddItemDescription;
+    - TextField AddItemDueDate;
+    - TextField DeleteItemDescription;
+    - TextField DeleteItemDueDate;
+
+    - TextField LoadListTitle;
+    - TextField NewTitleText;
+
+    + AddAList()
+    + ClickedAddAList()
+    + ClickedDeleteTheList()
+    + RemoveAList()
+    + ClickedAddItem()
+    + ClickedDeleteItem()
+
+    + ClickedEditDescription()
+    + ClickedEditDueDate()
+    + ClickedEditComplete()
+
+    + DisplayItems()
+    + ClickedShowAllItems()
+    + ClickedShowIncomplete()
+    + ClickedShowComplete()
+
+    + ClickedSaveList()
+    + ClickedSaveListOfLists()
+    + SaveListOfLists()
+
+    + ClickedLoadList()
+    + ClickedLoadListOfLists()
+    + LoadListofTODOLists()
+
+    + ClickedListView()
+    + ListCell()
+    + FileFormattingManager()
+}
+
+App o--> ListMenuController
+
+ListMenuController --> GetSetItems
+ListMenuController <-- GetSetItems
+
+ListMenuController --> ListAttributes
+ListAttributes --> ListMenuController
+
+ListAttributes --> GetSetItems
+ListAttributes <-- GetSetItems
+
+@enduml

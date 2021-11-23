@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea layoutX="20.0" layoutY="30.0" prefHeight="215.0" prefWidth="183.0" promptText="No Lists " />
+      <TextArea layoutX="19.0" layoutY="286.0" prefHeight="200.0" prefWidth="183.0" promptText="No Items" />
+      <Button layoutX="214.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Delete Item" />
+      <Button layoutX="214.0" layoutY="295.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Add Item" />
+      <Button layoutX="470.0" layoutY="33.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Show Incomplete" />
+      <Button layoutX="331.0" layoutY="33.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="Show Complete" />
+      <Button layoutX="214.0" layoutY="33.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Show All Items" />
+      <Button layoutX="214.0" layoutY="86.0" mnemonicParsing="false" text="AddAList" />
+      <Button layoutX="214.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Delete List" />
+      <Button layoutX="305.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Save List of Lists" />
+      <Button layoutX="424.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Load List of Lists" />
+      <Button layoutX="214.0" layoutY="218.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="Save List" />
+      <Button layoutX="214.0" layoutY="130.0" mnemonicParsing="false" text="Load A List" />
+      <TextField layoutX="288.0" layoutY="86.0" promptText="New List Title" />
+      <TextField layoutX="300.0" layoutY="130.0" promptText="Title of List to Load" />
+      <TextField layoutX="333.0" layoutY="296.0" prefHeight="25.0" prefWidth="149.0" promptText="New Description" />
+      <TextField layoutX="506.0" layoutY="295.0" prefHeight="25.0" prefWidth="149.0" promptText="New DueDate" />
+      <TextField layoutX="333.0" layoutY="336.0" prefHeight="25.0" prefWidth="149.0" promptText="Current Description" />
+      <TextField layoutX="506.0" layoutY="334.0" prefHeight="25.0" prefWidth="149.0" promptText="Current DueDate" />
+      <Label layoutX="54.0" layoutY="-2.0" prefHeight="25.0" prefWidth="119.0" text="To Do Lists">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="249.0" prefHeight="31.0" prefWidth="64.0" text="Items">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="214.0" layoutY="374.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Edit Description" />
+      <Button layoutX="214.0" layoutY="410.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Edit DueDate" />
+      <Button layoutX="213.0" layoutY="447.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Edit Completed" />
+      <TextField layoutX="333.0" layoutY="374.0" promptText="Current Description" />
+      <TextField layoutX="333.0" layoutY="410.0" promptText="Current Description" />
+      <TextField layoutX="333.0" layoutY="447.0" promptText="CurrentDescription" />
+      <TextField layoutX="506.0" layoutY="374.0" promptText="Current DueDate" />
+      <TextField layoutX="506.0" layoutY="410.0" promptText="Current DueDate" />
+      <TextField layoutX="506.0" layoutY="447.0" promptText="Current DueDate" />
+      <TextField layoutX="670.0" layoutY="374.0" promptText="New Description" />
+      <TextField layoutX="670.0" layoutY="410.0" promptText="New DueDate" />
+      <TextField layoutX="670.0" layoutY="447.0" promptText="New Completed" />
+      <TextFlow layoutX="12.0" layoutY="30.0" prefHeight="200.0" prefWidth="168.0" />
+   </children>
+</AnchorPane>
